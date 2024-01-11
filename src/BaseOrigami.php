@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Service\Origami;
+namespace Origami;
 
-use App\Enum\Origami\EntityEnum;
-use App\Service\Origami\Dto\CreateEntityResponseDto;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Lang;
+use Origami\Enum\EntityEnum;
+use Origami\Dto\CreateEntityResponseDto;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
@@ -29,9 +31,9 @@ abstract class BaseOrigami
 
     public function __construct()
     {
-        $this->username = config('origami.username');
-        $this->password = config('origami.password');
-        $this->url = config('origami.url');
+        $this->username = Config::get('origami.username');
+        $this->password = Config::get('origami.password');
+        $this->url = Config::get('origami.url');
     }
 
     private function getAction(): EntityEnum
@@ -113,7 +115,7 @@ abstract class BaseOrigami
             if (!empty($result['error']['column'])) {
                 $errors = [];
                 foreach ($result['error']['column'] as $column) {
-                    $errors[$column['field_data_name']] = __($column['message']);
+                    $errors[$column['field_data_name']] = Lang::get($column['message']);
                 }
 
                 throw ValidationException::withMessages($errors);

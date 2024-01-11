@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Origami\Trait;
+namespace Origami\Trait;
 
 trait GetByIdTrait
 {

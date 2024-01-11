@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Origami\Dto\Traits;
+namespace Origami\Dto\Traits;
 
 use Illuminate\Support\Str;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Service\Origami\Trait;
+namespace Origami\Trait;
 
-use App\Service\Origami\Dto\PaginationListDto;
+use Origami\Dto\PaginationListDto;
 
 trait FieldsKeyValueTrait
 {

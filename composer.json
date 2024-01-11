@@ -2,7 +2,7 @@
     "name": "welcome/origami",
     "autoload": {
         "psr-4": {
-            "Welcome\\Origami\\": "src/"
+            "Origami\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,9 @@
             "email": "jenia999jenia9999@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/console": "^10.40",
+        "illuminate/http": "^10.40",
+        "illuminate/validation": "^10.40"
+    }
 }

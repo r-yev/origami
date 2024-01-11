@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Service\Origami\Dto\Client;
+namespace Origami\Dto\Client;
 
-use App\Service\Origami\Dto\Traits\DtoArrayable;
-use App\Service\Origami\Dto\Traits\DtoExArrayable;
+use Origami\Dto\Traits\DtoArrayable;
+use Origami\Dto\Traits\DtoExArrayable;
 
 class ClientDto
 {

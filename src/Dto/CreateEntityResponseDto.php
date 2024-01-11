@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Service\Origami\Dto;
+namespace Origami\Dto;
 
-use App\Service\Origami\Dto\Traits\DtoArrayable;
+use Origami\Dto\Traits\DtoArrayable;
 
 
 /**

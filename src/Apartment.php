@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Service\Origami;
+namespace Origami;
 
-use App\Service\Origami\Dto\Apartment\ApartmentDto;
-use App\Service\Origami\Trait\FieldsKeyValueTrait;
-use App\Service\Origami\Trait\GetByIdTrait;
+use Origami\Dto\Apartment\ApartmentDto;
+use Origami\Trait\FieldsKeyValueTrait;
+use Origami\Trait\GetByIdTrait;
 
 class Apartment extends BaseOrigami
 {

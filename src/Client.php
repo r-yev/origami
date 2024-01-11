@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Service\Origami;
+namespace Origami;
 
-use App\Exceptions\SaveDataException;
-use App\Service\Origami\Dto\Client\ClientDto;
-use App\Service\Origami\Dto\CreateEntityResponseDto;
-use App\Service\Origami\Trait\FieldsKeyValueTrait;
-use App\Service\Origami\Trait\GetByIdTrait;
+use Origami\Exceptions\SaveDataException;
+use Origami\Dto\Client\ClientDto;
+use Origami\Dto\CreateEntityResponseDto;
+use Origami\Trait\FieldsKeyValueTrait;
+use Origami\Trait\GetByIdTrait;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
 

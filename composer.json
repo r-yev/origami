@@ -1,0 +1,15 @@
+{
+    "name": "welcome/origami",
+    "autoload": {
+        "psr-4": {
+            "Welcome\\Origami\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yevhenii Radomskyi",
+            "email": "jenia999jenia9999@gmail.com"
+        }
+    ],
+    "require": {}
+}
